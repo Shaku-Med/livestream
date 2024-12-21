@@ -2,8 +2,7 @@
 
 import { useState } from 'react'
 import dynamic from 'next/dynamic'
-import { Button } from "../components/ui/button"
-
+import React from 'react'
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false })
 
 export default function LiveStream() {
@@ -21,12 +20,12 @@ export default function LiveStream() {
           height="100%"
         />
       </div>
-      <Button 
+      <button 
         onClick={() => setIsPlaying(!isPlaying)}
         className="w-full"
       >
         {isPlaying ? 'Pause Stream' : 'Start Stream'}
-      </Button>
+      </button>
     </div>
   )
 }
