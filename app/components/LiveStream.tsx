@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import dynamic from 'next/dynamic'
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button"
 
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false })
 
